@@ -20,16 +20,16 @@ describe('AppComponent', () => {
     expect(app).toBeTruthy();
   });
 
-  it(`should have as title 'NepFood-Frontend'`, () => {
+  it(`should have as title 'nepFood-Frontend'`, () => {
     const fixture = TestBed.createComponent(AppComponent);
     const app = fixture.componentInstance;
-    expect(app.title).toEqual('NepFood-Frontend');
+    expect(app.title).toEqual('nepFood-Frontend');
   });
 
   it('should render title', () => {
     const fixture = TestBed.createComponent(AppComponent);
     fixture.detectChanges();
     const compiled = fixture.nativeElement as HTMLElement;
-    expect(compiled.querySelector('.content span')?.textContent).toContain('NepFood-Frontend app is running!');
+    expect(compiled.querySelector('.content span')?.textContent).toContain('nepFood-Frontend app is running!');
   });
 });
